@@ -24,11 +24,10 @@ In order for you to access the KPI Service, you need to authenticate with `api_k
 ```python
     >>> localytics = Localytics(api_key = 'XXXXX', api_secret= 'YYYYY')
 ```
-Once you've setup your user token and app tokens, then each of these calls will produce data for you straight away.
 
 
 ### Download Data
-There is 1 method that downloads data to local file. Example shows to export data for last 2 days:
+There is a method  `download_data` that downloads data to local folder. Example shows how to export data for last 2 days:
 
 ```python
     >>> localytics.download_data(
@@ -38,7 +37,7 @@ There is 1 method that downloads data to local file. Example shows to export dat
         )
 ```
 
-You can also specify parameters. A more complex example:
+You can also specify optional parameters. This is more complex example:
 
 ```python
     >>> localytics.download_data(
@@ -50,7 +49,7 @@ You can also specify parameters. A more complex example:
     )
 ```
 
-On default data are stored in `localytics_data` folder, compressed in `gz` format. Please set `compresses = True` if you want to store data decompressed.
+On default data are stored in `localytics_data` folder and compressed in `gz` format. Please set `compresses = True` if you want to store data decompressed.
 
 
 ## Contributions and bug reports.
