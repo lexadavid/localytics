@@ -9,10 +9,10 @@ setuptools.setup(
     url='https://github.com/lexadavid/localytics',
     author='David Lexa',
     author_email='david.kaur.lexa@wunder.org',
-    packages=setuptools.find_packages(),
+    packages = ['localytics'],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    version='1.3',
+    version='1.41',
     license='MIT',
     description='Python API Client for Localytics Raw Data Export'
 )
