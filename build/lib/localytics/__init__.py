@@ -1,10 +1,10 @@
 import requests
-from datetime import timedelta, datetime
-from progressbar import ProgressBar
 import time
 import os
 import shutil
 import gzip
+from datetime import timedelta, datetime
+from progressbar import ProgressBar
 
 class Localytics():
 

@@ -12,7 +12,7 @@ setuptools.setup(
     packages = ['localytics'],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    version='1.41',
+    version='1.42',
     license='MIT',
     description='Python API Client for Localytics Raw Data Export'
 )
