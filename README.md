@@ -22,7 +22,7 @@ Let's have a walk through the functionalities through a couple of examples. Star
 In order for you to download Localytics events, you need to authenticate with using `api_key` and `api_secret`. Once you supply it, it will be used throughout the entire session.
 
 ```python
-    >>> localytics = Localytics(api_key = 'XXXXX', api_secret= 'YYYYY')
+    >>> l = Localytics(api_key = 'XXXXX', api_secret= 'YYYYY')
 ```
 
 
@@ -30,7 +30,7 @@ In order for you to download Localytics events, you need to authenticate with us
 There is a method  `download_data` that downloads data to local folder. Example shows how to export data for last 2 days:
 
 ```python
-    >>> localytics.download_data(
+    >>> l.download_data(
             app_ids = ['AAAAA', 'BBBBB'],
             start_date = datetime.today() - timedelta(2),
             end_date = datetime.today()
@@ -40,7 +40,7 @@ There is a method  `download_data` that downloads data to local folder. Example 
 You can also specify optional parameters. This is more complex example:
 
 ```python
-    >>> localytics.download_data(
+    >>> l.download_data(
         app_ids = ['AAAAA', 'BBBBB'],
         start_date = datetime.today() - timedelta(2),
         end_date = datetime.today(),
